@@ -526,6 +526,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 .prose pre.sourceCode { margin: 0; padding: 0; }
 .prose pre.sourceCode code { font-family: var(--mono); font-size: 0.8rem; }
 a.sourceLine, code.sourceCode a { text-decoration: none; }
+
+/* long unbroken strings (URLs in footnotes) must not widen the page */
+.prose p, .prose li, .prose dd { overflow-wrap: break-word; }
+.prose { max-width: 100%; }
 </style>
 </head>
 <body>
@@ -702,11 +706,27 @@ expected to show a slight increase given the nearby CHP plants.</p>
 <p><strong>Decision Workthrough:</strong> - Bloomsbury (WC1B; mid-range
 pollution). The reasons I had for choosing it at first are as
 follows:</p>
-<pre><code>- **Bloomsbury:** Classified as an **Urban Background** site, suitable choice for measuring ambient pollution levels away from the direct influence of busy roads or industrial activity.¹  The location chosen sits in Russell Square, which is close enough to busy areas to reflect pollution levels, but not dominated by a single road&#39;s traffic like the Marylebone Road conditions. It is roughly 1.7km away from Marylebone Road, therefore the 2 sites share similar meterological conditions and are less likely to differ in pollution characteristics due to weather reasons. 
-
-    - Limitation: nearby Combined Heat and Power (CHP) plants have contributed to a small increase in NO₂ above the London background.²
-
-    - Rejecting Other Options: I considered both Hackney and Islington for a mid-range location. However, both lack the useful DEFRA classification, and Hackney in particular has a vibrant nightlife scene that may have made comparisons between locations more difficult in this instance.</code></pre>
+<ul>
+<li><p><strong>Bloomsbury:</strong> Classified as an <strong>Urban
+Background</strong> site, suitable choice for measuring ambient
+pollution levels away from the direct influence of busy roads or
+industrial activity.¹ The location chosen sits in Russell Square, which
+is close enough to busy areas to reflect pollution levels, but not
+dominated by a single road’s traffic like the Marylebone Road
+conditions. It is roughly 1.7km away from Marylebone Road, therefore the
+2 sites share similar meterological conditions and are less likely to
+differ in pollution characteristics due to weather reasons.</p>
+<ul>
+<li><p>Limitation: nearby Combined Heat and Power (CHP) plants have
+contributed to a small increase in NO₂ above the London
+background.²</p></li>
+<li><p>Rejecting Other Options: I considered both Hackney and Islington
+for a mid-range location. However, both lack the useful DEFRA
+classification, and Hackney in particular has a vibrant nightlife scene
+that may have made comparisons between locations more difficult in this
+instance.</p></li>
+</ul></li>
+</ul>
 </div></section>
 <section class="prose"><div style="font-family: system-ui; padding: 20px 30px 20px 20px; background-color: #FFFFFF; border-left: 8px solid #bf9ffaff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);max-width:800px;color:#212121;">
 
