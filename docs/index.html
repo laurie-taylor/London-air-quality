@@ -753,9 +753,14 @@ condradict this?</li>
 </ul></li>
 </ul>
 <h2 id="reproduction-instructions">Reproduction Instructions:</h2>
-<p>[Replace this section with your content. What steps should someone
-take to reproduce your analysis? What packages need to be installed?
-What API keys are required?]</p>
+<ol type="1">
+<li>Register for a free API key at OpenWeather.</li>
+<li>Create a <code>.env</code> file at the project root containing
+<code>API_KEY=your_key_here</code>.</li>
+<li>Install:
+<code>pip install requests pandas python-dotenv holidays matplotlib seaborn</code>.</li>
+<li>Run NB01, NB02, then NB03 in order.</li>
+</ol>
 <h4 id="hypotheses">Hypotheses:</h4>
 <p>All Locations: - <strong>H₀:</strong> Mean daily air pollutant levels
 do not differ significantly between weekdays and weekends. -
