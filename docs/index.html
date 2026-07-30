@@ -1173,9 +1173,11 @@ Hourly rows: 90652</pre></section>
 Filtering Time Horizon to Whole Years</strong></h2>
 <p><strong>Reason for Decision</strong>:</p>
 <ul>
-<li>The API data begins 27/11/2020, meaning 2020 is an incomplete year.
-To make analysis easier, I’m filtering to 01/01/2021 - 31/12/2025 which
-gives me 5 full calendar years (&gt;200 weekends).</li>
+<li>The API data begins 27/11/2020 and my collection extends to 
+25/02/2026, meaning 2020 and 2026 are incomplete years.
+To make further analysis easier, I’m wrote a filter to 01/01/2021 - 31/12/2025 
+which gives me 5 full calendar years (&gt;200 weekends). Note that the 
+outputs saved below use the full data timespan.</li>
 <li>With regards to COVID and restricted activity potentially skewing my
 results, I’ll wait and see how the data reflects this in Data
 Analysis.</li>
@@ -1906,6 +1908,10 @@ this didn’t represent the weekday-weekend comparison clearly enough. So
 I decided to incorporate the year by year figures and the weekend
 percentage change in 3 representative line charts for each
 pollutant.</li>
+<li>As noted in NB02 Step 2, the 2020 and 2026 points cover winter months only 
+(November–December and January–February), so they are not directly comparable 
+to the full years and should be read with caution. The 2021–2025 points 
+are complete.</li>
 </ul>
 </div></section>
 <section class="cell"><p class="cell-label">Code</p><div class="sourceCode" id="cb1"><pre
